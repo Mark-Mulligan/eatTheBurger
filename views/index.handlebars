@@ -1,12 +1,36 @@
 <h1>Burgers Burgers Burgers</h1>
 
-<ul>
-  {{#each burgers}}
-    <li data-id={{this.id}}>{{this.burger_name}}</li>
-  {{/each}}
-</ul>
+<div class="container">
+    <div class="row">
+        <div class="col">
+            <h2>Not Eaten</h2>
+            {{#each burgers}}
+                {{#unless this.devoured}}
+                    <p data-burgerid={{this.id}}>{{this.burger_name}}</p>
+                    <button data-burgerid={{this.id}} class="btn btn-secondary devour-btn">Devour</button>
+                {{/unless}} 
+            {{/each}}
+        </div>
+        <div class="col">
+            <h2>Devoured</h2>
+            {{#each burgers}}
+                {{#if this.devoured}}
+                    <p data-burgerid={{this.id}}>{{this.burger_name}}</p>
+                    <button data-burgerid={{this.id}} class="btn btn-secondary devour-btn">Devour</button>
+                {{/if}} 
+            {{/each}}
+        </div>
+    </div>
+</div>
 
-<form action="">
+<!-- <ul>
+  {{#each burgers}}
+    <li data-burgerid={{this.id}}>{{this.burger_name}}</li>
+    <button data-burgerid={{this.id}} class="btn btn-secondary devour-btn">Devour</button>
+  {{/each}}
+</ul> -->
+
+<form action="/newburger" method="POST">
     <label for="burgerName">Add Burger</label>
     <input type="text" name="burgerName">
     <button type="submit">Submit</button>

@@ -7,12 +7,12 @@ var burger = {
     });
   },
   // The variables cols and vals are arrays.
-  create: function(cols, vals, cb) {
+  create: function(table, value, cb) {
     orm.insertOne(table, value, function(res) {
         cb(res);
     });
   },
-  eat: function(objColVals, condition, cb) {
+  eat: function(table, value, id, cb) {
     orm.updateOne(table, value, id, function(res) {
         cb(res);
     })

@@ -17,12 +17,18 @@ router.get("/", function (req, res) {
 
 });
 
-router.post("/api/cats", function (req, res) {
-
+router.post("/newburger", function (req, res) {
+    burger.create('burgers', req.body.burgerName, function(data) {
+        //console.log(data);
+        res.redirect('/');
+    });
 });
 
-router.put("/api/cats/:id", function (req, res) {
-
+router.put("/devour/:id", function (req, res) {
+    burger.eat('burgers', true, req.params.id, function(data) {
+        console.log(data);
+        res.json({status: 202});
+    })
 });
 
 module.exports = router;
