@@ -1,5 +1,5 @@
 const { builtinModules } = require("module");
-var connection = require("../config/connection.js");
+const connection = require("../config/connection.js");
 
 const orm = {
     selectAll: function (table, cb) {
