@@ -1,3 +1,37 @@
 body {
     text-align: center;
+    min-height: 100vh;
+    background-image: url('../images/restaurantBackground.jpg');
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    color: #d5cdad;
+}
+
+ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+.main-content-container {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 100px;
+    background-color: rgba(64, 76, 78, 0.6);
+}
+
+.burger-name {
+    display: inline-block;
+    font-size: 22px;
+}
+
+li {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: baseline;
+}
+
+.devour-btn {
+    margin: 10px;
 }
