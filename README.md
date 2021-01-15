@@ -43,7 +43,6 @@ npm install
 ```
 
 * Step 4: Make sure an instance of mySQL is running on your local device. 
-
 https://www.mysqltutorial.org/mysql-adminsitration/start-mysql
 
 * Step 5: Use the commands in schema.sql in the db folder to create the database for this project.  You can populate the database usings the seeds.sql file. I personally like to use mySQLWorkbench to interact with the database to run these commands.    
@@ -63,7 +62,7 @@ node server.js
 <img src="./readmeImages/zoomInExample.png" alt="App picture" width="500px" height="250px">
 
 ## Questions
-[My Github](https://github.com/MarkMulligan97) || mark.mulligan.jr1@gmail.com
+[My Github](https://github.com/Mark-Mulligan) || mark.mulligan.jr1@gmail.com
 
 #### How to Contact Me
 Feel free to reach out to me if you have any questions about this project.  You can email me using the email listed above or can go to my github page to view my other projects and portfolio.
