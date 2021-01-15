@@ -43,6 +43,7 @@ npm install
 ```
 
 * Step 4: Make sure an instance of mySQL is running on your local device. 
+
 https://www.mysqltutorial.org/mysql-adminsitration/start-mysql
 
 * Step 5: Use the commands in schema.sql in the db folder to create the database for this project.  You can populate the database usings the seeds.sql file. I personally like to use mySQLWorkbench to interact with the database to run these commands.    
