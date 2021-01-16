@@ -21,7 +21,7 @@ This application is built on an express server and uses a mySQL to persist data.
   
 ## Installation
 ### View the Project Live
-https://hangman-react-app.herokuapp.com/
+https://eattheburgerapp4357.herokuapp.com/
 
 ### Run the Project Locally
 ** This project requires node.js and mySQL to run locally so make sure these are installed on your device.  **
