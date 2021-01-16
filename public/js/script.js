@@ -16,7 +16,6 @@ function seeIfValueExists(objArr, key, targetValue) {
             return true;
         }
     }
-
     return false;
 }
 
@@ -29,13 +28,10 @@ function checkForBurgers() {
             if (!uneatenBurgers) {
                 document.querySelector('.created-burgers-placeholder').classList.remove('hidden');
             } 
-            
+
             if (!devouredBurgers) {
                 document.querySelector('.devoured-burgers-placeholder').classList.remove('hidden');
             }
-
-            console.log(uneatenBurgers);
-            console.log(devouredBurgers);
         }
     }).catch(function (error) {
         console.log(error);
