@@ -14,6 +14,4 @@ if (process.env.JAWSB_URL) {
     });
 };
 
-
-
 module.exports = connection;
